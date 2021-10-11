@@ -1,0 +1,21 @@
+{ 
+    "manifest_version":3, 
+    "name":"itemmania premium remover", 
+    "version":"1.0",
+    "description":"아이템매니아의 비양심적으로 긴 프리미엄글들을 제거해 줍니다. 제발 적당히 합시다.", 
+    "author": "Keith Kwon",
+    "icons":{
+     "128":"12.png", "48":"12.png", "16":"12.png"}, 
+
+
+    "content_scripts":[
+        {
+            "matches":["*://*.itemmania.com/*"],
+            "js":["content.js"]
+        }
+    ],
+    "optional_permissions": ["tabs"],
+    "host_permissions":[
+        "*://*.itemmania.com/*"
+    ]
+}
